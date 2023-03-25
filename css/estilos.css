@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*inicia el headerrrr*/
+
+
+.image-portada {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.menu {
+    background-color: rgb(211, 248, 156);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 30px;
+}
+
+.menu ul {
+    text-align: end;
+}
+.menu li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 20px;
+    
+    color: rgb(199, 160, 110)
+    
+    
+
+}
+
+/*inicia el mainnnnnnn*/
+
+
+.titulo {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+
+.textoc {
+    width: 400px;
+    background-color: rgb(252, 246, 239);
+    margin: 20px auto;
+    padding: 40px 10px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+
+/* inicia el footerrrr*/ 
+
+.pie {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(211, 248, 156);
+    padding: 50px;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto-footer{
+    color: rgb(199, 160, 110);
+    font-family: 'Nunito', sans-serif;
+
+}
+.logos{
+    width: 50%;
+
+}
+.instagram {
+    width: 45px;
+}
+.facebook {
+    width: 45px;
+}
+.whatsapp {
+    width: 45px;
+}
+
+/* consultoriooo */
+
+.imagen-modelo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+.imagen-modelo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* sobre miiii */
+
+
+
+.productospa {
+    width: 250px;
+    margin: 10px;
+
+}
+.productos {
+    width: 100%;
+    height: 240px;
+}
+
+/* turnoss */
+
+.mein p{
+    font-family: 'Nunito', sans-serif;
+}
+
+.textoturnos{
+    margin: 10px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+label{
+    margin-top: 15px;
+    font-family: 'Nunito', sans-serif;
+    color: #888888;
+}
+
+input[type="email"] {
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+textarea {
+    width: 50%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    background-color: rgb(155, 194, 97);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
