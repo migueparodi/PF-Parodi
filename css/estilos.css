@@ -85,7 +85,7 @@
 }
 .instagram {
     width: 45px;
-   margin: 10px;
+    margin: 10px;
 }
 .facebook {
     width: 45px;
@@ -213,6 +213,74 @@ textarea {
 
 }
  
-.imgpaciente {
-    
+
+@media (max-width: 767px) {
+    .textoc {
+        width: unset;
+    }
+
+    .pie {
+        padding: 20px 10px;
+        flex-direction: column;
+    }
+
+    .logos {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto-footer {
+        text-align: center;
+        width: 100%;
+    }
+
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-area: auto;
+        grid-gap: 5px;
+    }
+
+
+
+    .menu ul {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 5px 10px;
+    }
+
+    input[type="email"] {
+        width: 100%;
+        padding: 5px 10px;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 10px;
+    }
+
+
+    .row {
+        position: relative;
+    }
+
+    .mein {
+        padding-bottom: 50px;
+    }
 }
+
+
+.img-fluid.img-thumbnail {
+    width: 100%;
+}
+
+.contenedor img {
+    width: 100%;
+}
+
