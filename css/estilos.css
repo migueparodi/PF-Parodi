@@ -18,6 +18,10 @@
     padding: 30px;
 }
 
+.menu .fa-bars {
+    display: none;
+}
+
 .menu ul {
     text-align: end;
 }
@@ -30,7 +34,7 @@
 
 .menu li a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
     
     color: rgb(199, 160, 110)
     
@@ -215,6 +219,44 @@ textarea {
  
 
 @media (max-width: 767px) {
+    
+    .menu .fa-bars {
+        display: block;
+        text-align: end;
+        font-size: 50px;
+        padding: 5px;
+        color: rgb(199, 160, 110)
+    }
+    
+    .menu .fa-bars:hover + ul {
+        right: 0;
+    }
+
+    .menu ul:hover {
+        right: 0;
+    }
+
+    .menu ul {
+        right: -350px;
+        top: 0;
+        position: fixed;
+        background: antiquewhite;
+        font-size: 50px;
+        width: 250px;
+        height: 100vh;
+        z-index: 5;
+        flex-direction: column;
+        justify-content: start;
+        transition: 0.5s;
+    }
+
+
+    /*.menu ul {
+        padding-left: 0;
+        text-align: center;
+    }*/
+    
+    
     .textoc {
         width: unset;
     }
@@ -244,11 +286,6 @@ textarea {
     }
 
 
-
-    .menu ul {
-        padding-left: 0;
-        text-align: center;
-    }
 
     input[type="text"] {
         width: 100%;
