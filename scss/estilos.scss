@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+@import "reseteo";
+@import "mixin";
+@import "variables";
+@import "navegador";
+@import "footer";
+@import "consultorio";
+@import "turnos";
+@import "articulos";
+@import "sobremi";
+@import "extend";
+@import "inicio";
+
+
+
+
+
+
+
+
+/*inicia el mainnnnnnn*/
+
+.mein{
+    background-color: rgb(245, 245, 245);
+}
+
+
+.titulo {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 20px;
+}
+
+
+.textoc {
+    width: 400px;
+    background-color: rgb(252, 246, 239);
+    margin: 20px auto;
+    padding: 40px 10px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+
+@media (max-width: 767px) {
+
+
+
+    // .textoc {
+    //     width: unset;
+    // }
+
+    .row {
+        position: relative;
+    }
+
+    .mein {
+        padding-bottom: 50px;
+    }
+}
+
+
+.img-fluid.img-thumbnail {
+    width: 100%;
+}
+

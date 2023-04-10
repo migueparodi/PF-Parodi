@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*inicia el headerrrr*/
+
+
+.menu {
+    background-color: rgb(211, 248, 156);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 30px;
+}
+
+.menu .fa-bars {
+    display: none;
+}
+
+.menu ul {
+    text-align: end;
+}
+.menu li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 30px;
+    
+    color: rgb(199, 160, 110)
+    
+    
+
+}
+
+/*inicia el mainnnnnnn*/
+
+
+.titulo {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 40px;
+    padding: 20px;
+}
+
+
+.textoc {
+    width: 400px;
+    background-color: rgb(252, 246, 239);
+    margin: 20px auto;
+    padding: 40px 10px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+
+/* inicia el footerrrr*/ 
+
+.pie {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(211, 248, 156);
+    padding: 50px;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto-footer{
+    color: rgb(199, 160, 110);
+    font-family: 'Nunito', sans-serif;
+
+}
+.logos{
+    width: 50%;
+    
+
+}
+.instagram {
+    width: 45px;
+    margin: 10px;
+}
+.facebook {
+    width: 45px;
+}
+.whatsapp {
+    width: 45px;
+    margin: 10px;
+}
+
+/* consultoriooo */
+
+.imagen-modelo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+.imagen-modelo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* articulossssss */
+
+article {
+    margin: 30px;
+    padding: 5px
+}
+
+/* .productospa {
+    width: 250px;
+    margin: 10px;
+
+}
+.productos {
+    width: 100%;
+    height: 240px;
+} */
+
+
+
+/* turnoss */
+
+.mein p{
+    font-family: 'Nunito', sans-serif;
+}
+
+.textoturnos{
+    margin: 10px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+label{
+    margin-top: 15px;
+    font-family: 'Nunito', sans-serif;
+    color: #888888;
+}
+
+input[type="text"] {
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="email"] {
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+textarea {
+    width: 50%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+  input[type="submit"] {
+    background-color: rgb(155, 194, 97);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+  /* sobre mi */
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: auto;
+    grid-gap: 5px;
+}
+
+  .contenedor div {
+    padding: 20px;
+    margin: 20px;
+  }
+
+ .textsoy {
+    background-color: antiquewhite;
+    
+ }
+
+.textpaciente {
+    background-color: antiquewhite;
+
+}
+ 
+
+@media (max-width: 767px) {
+    
+    .menu .fa-bars {
+        display: block;
+        text-align: end;
+        font-size: 50px;
+        padding: 5px;
+        color: rgb(199, 160, 110)
+    }
+    
+    .menu .fa-bars:hover + ul {
+        right: 0;
+    }
+
+    .menu ul:hover {
+        right: 0;
+    }
+
+    .menu ul {
+        right: -350px;
+        top: 0;
+        position: fixed;
+        background: antiquewhite;
+        font-size: 50px;
+        width: 250px;
+        height: 100vh;
+        z-index: 5;
+        flex-direction: column;
+        justify-content: start;
+        transition: 0.5s;
+    }
+
+
+    /*.menu ul {
+        padding-left: 0;
+        text-align: center;
+    }*/
+    
+    
+    .textoc {
+        width: unset;
+    }
+
+    .pie {
+        padding: 20px 10px;
+        flex-direction: column;
+    }
+
+    .logos {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto-footer {
+        text-align: center;
+        width: 100%;
+    }
+
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-area: auto;
+        grid-gap: 5px;
+    }
+
+
+
+    input[type="text"] {
+        width: 100%;
+        padding: 5px 10px;
+    }
+
+    input[type="email"] {
+        width: 100%;
+        padding: 5px 10px;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 10px;
+    }
+
+
+    .row {
+        position: relative;
+    }
+
+    .mein {
+        padding-bottom: 50px;
+    }
+}
+
+
+.img-fluid.img-thumbnail {
+    width: 100%;
+}
+
+.contenedor img {
+    width: 100%;
+}
+

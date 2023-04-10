@@ -1,0 +1,41 @@
+
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: auto;
+    grid-gap: 5px;
+
+    div {
+        @include mpin(20px, 20px);
+    }
+    .textsoy {
+        background-color: $color-antiquewhite;
+        text-align: justify;
+    }
+    
+    .textpaciente {
+        background-color: $color-antiquewhite;
+        text-align: justify;
+    
+    }
+    
+}
+
+
+
+@media (max-width: 767px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-area: auto;
+        grid-gap: 5px;
+        
+        
+    }
+}
+.contenedor img {
+    width: 100%;
+}
+
+
