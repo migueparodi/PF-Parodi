@@ -118,14 +118,17 @@
     text-align: center;
   }
 }
-.imagen-modelo {
+.consultorio-container .notas {
+  display: none;
+}
+.consultorio-container .imagen-modelo {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   padding: 20px;
 }
-.imagen-modelo img {
+.consultorio-container .imagen-modelo img {
   max-width: 100%;
   max-height: 100%;
 }
@@ -142,6 +145,7 @@
     margin-right: 150px;
   }
   .consultorio-container .notas {
+    display: flex;
     background-color: antiquewhite;
     margin: 40px;
     padding: 20px;
