@@ -5,73 +5,6 @@
   box-sizing: border-box;
 }
 
-.menu {
-  background-color: rgb(211, 248, 156);
-  font-family: "Nunito", sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  padding: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.menu .logo {
-  padding: 25px 30px 25px 0;
-  font-weight: bold;
-  font-size: 3em;
-  color: rgb(94, 86, 16);
-}
-.menu .fa-bars {
-  display: none;
-}
-.menu ul {
-  text-align: end;
-  list-style-type: none;
-  margin: 20px 0 20px 0;
-}
-.menu ul li {
-  display: inline;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-.menu ul li a {
-  text-decoration: none;
-  font-size: 30px;
-  color: rgb(199, 160, 110);
-}
-.menu ul li a:hover {
-  color: rgb(240, 230, 147);
-}
-
-@media (max-width: 767px) {
-  .menu .fa-bars {
-    display: block;
-    text-align: end;
-    font-size: 50px;
-    padding: 5px;
-    margin: 32px 0;
-    color: rgb(199, 160, 110);
-  }
-  .menu ul {
-    right: -350px;
-    top: 0;
-    position: fixed;
-    background: antiquewhite;
-    font-size: 50px;
-    width: 250px;
-    height: 100vh;
-    z-index: 5;
-    flex-direction: column;
-    justify-content: start;
-    transition: 0.5s;
-  }
-  .menu .fa-bars:hover + ul {
-    right: 0;
-  }
-  .menu ul:hover {
-    right: 0;
-  }
-}
 .pie {
   width: 100%;
   height: 200px;
@@ -327,15 +260,19 @@ article {
 }
 .mein1 #nuestros-tips .container {
   text-align: center;
-  padding: 150px 12px 100px;
+  padding: 100px 12px 100px;
 }
 .mein1 #nuestros-tips .container h2 {
-  margin-bottom: 60px;
+  margin-bottom: 90px;
+  padding-bottom: 30px;
 }
 
 @media (max-width: 767px) {
   #nuestros-tips p {
     display: none;
+  }
+  .nutritips h3 {
+    padding-top: 36px;
   }
   .nutritips .tarjetas1 {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../multimedia/img/tarjetas/nutricion-salud.jpg");
@@ -344,9 +281,6 @@ article {
     margin: 15px;
     border-radius: 15px;
   }
-  .nutritips .tarjetas1 h3 {
-    padding: 10px;
-  }
   .nutritips .tarjetas2 {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../multimedia/img/tarjetas/nutricion-ayurveda.jpg");
     background-position: center center;
@@ -354,18 +288,12 @@ article {
     margin: 15px;
     border-radius: 15px;
   }
-  .nutritips .tarjetas2 h3 {
-    padding: 10px;
-  }
   .nutritips .tarjetas3 {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../multimedia/img/tarjetas/recetario.jpg");
     background-position: center center;
     background-size: cover;
     margin: 15px;
     border-radius: 15px;
-  }
-  .nutritips .tarjetas3 h3 {
-    padding: 10px;
   }
   #caracteristicas .container {
     text-align: center;
@@ -391,8 +319,10 @@ article {
     display: flex;
     justify-content: center;
   }
-  #nuestros-tips .container .nutritips p {
-    text-align: justify;
+  #nuestros-tips .container .nutritips h3 {
+    padding-bottom: 24px;
+    margin-bottom: 0px;
+    font-size: 1.4em;
   }
   #nuestros-tips .container .nutritips .tarjetas1 {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../multimedia/img/tarjetas/nutricion-salud.jpg");
@@ -405,9 +335,6 @@ article {
     margin: 15px;
     border-radius: 15px;
   }
-  #nuestros-tips .container .nutritips .tarjetas1 h3 {
-    padding: 10px;
-  }
   #nuestros-tips .container .nutritips .tarjetas2 {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../multimedia/img/tarjetas/nutricion-ayurveda.jpg");
     padding: 50px;
@@ -419,10 +346,6 @@ article {
     margin: 15px;
     border-radius: 15px;
   }
-  #nuestros-tips .container .nutritips .tarjetas2 h3 {
-    padding-bottom: 24px;
-    font-size: 1.4em;
-  }
   #nuestros-tips .container .nutritips .tarjetas3 {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../multimedia/img/tarjetas/recetario.jpg");
     padding: 50px;
@@ -433,10 +356,6 @@ article {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     margin: 15px;
     border-radius: 15px;
-  }
-  #nuestros-tips .container .nutritips .tarjetas3 h3 {
-    padding-bottom: 24px;
-    font-size: 1.4em;
   }
   #nuestros-tips .container .nutritips p {
     color: rgb(255, 255, 255);
