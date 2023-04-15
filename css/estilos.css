@@ -100,9 +100,16 @@
   }
 }
 .contactarse {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
+  display: flex;
 }
+.contactarse .mapa {
+  margin-left: auto;
+  padding-right: 5%;
+}
+.contactarse form {
+  width: 50%;
+}
+
 .mein p {
   font-family: "Nunito", sans-serif;
 }
@@ -125,21 +132,21 @@ label {
 }
 
 input[type=text] {
-  width: 30%;
+  width: 50%;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
 }
 
 input[type=email] {
-  width: 30%;
+  width: 50%;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
 }
 
 textarea {
-  width: 50%;
+  width: 100%;
   padding: 10px;
   margin-top: 5px;
   border: 1px solid #ccc;
@@ -162,17 +169,26 @@ input[type=submit]:hover {
 }
 
 @media (max-width: 767px) {
-  input[type=text] {
+  .contactarse {
+    display: flex;
+  }
+  .contactarse form {
+    width: 100%;
+  }
+  .contactarse form input[type=text] {
     width: 100%;
     padding: 5px 10px;
   }
-  input[type=email] {
+  .contactarse form input[type=email] {
     width: 100%;
     padding: 5px 10px;
   }
-  textarea {
+  .contactarse form textarea {
     width: 100%;
     padding: 10px;
+  }
+  .contactarse .mapa {
+    display: none;
   }
 }
 article {
@@ -366,6 +382,12 @@ article {
   height: 350px;
   margin: 26px;
 }
+.nose .tarjeta:hover .delante {
+  transform: perspective(600px) rotateY(180deg);
+}
+.nose .tarjeta:hover .atras {
+  transform: perspective(600px) rotateY(360deg);
+}
 .nose .tarjeta .cara {
   position: absolute;
   width: 100%;
@@ -413,14 +435,6 @@ article {
 }
 .nose .tarjeta .atras button:hover {
   background-color: rgb(173, 243, 68);
-}
-
-.tarjeta:hover .delante {
-  transform: perspective(600px) rotateY(180deg);
-}
-
-.tarjeta:hover .atras {
-  transform: perspective(600px) rotateY(360deg);
 }
 
 @media (max-width: 767px) {

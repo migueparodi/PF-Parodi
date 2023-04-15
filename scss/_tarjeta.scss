@@ -10,6 +10,16 @@
         height: 350px;
         margin: 26px;
 
+
+        &:hover .delante{
+            transform: perspective(600px) rotateY(180deg);
+        }
+        
+        &:hover .atras{
+            transform: perspective(600px) rotateY(360deg);
+        }
+
+
         .cara{
             position: absolute;
             width: 100%;
@@ -66,13 +76,7 @@
 }
 
 
-.tarjeta:hover .delante{
-    transform: perspective(600px) rotateY(180deg);
-}
 
-.tarjeta:hover .atras{
-    transform: perspective(600px) rotateY(360deg);
-}
 
 
 @media (max-width: 767px) {
