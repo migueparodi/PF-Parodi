@@ -48,11 +48,10 @@
 
 @media (max-width: 767px) {
 
+    #carouselExampleIndicators{
+        display: none;
+    }
 
-
-    // .textoc {
-    //     width: unset;
-    // }
 
     .row {
         position: relative;
