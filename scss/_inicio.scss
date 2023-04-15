@@ -1,11 +1,16 @@
-
-
 .mein1 {
-
-    h2{font-size: 2.7em;}
-    h3{font-size: 2em;}
     background-color: rgb(245, 245, 245);
-    ul{list-style: none;
+    
+    font-family: 'Nunito', sans-serif;
+
+    h2{
+        font-size: 2.7em;
+    }
+    h3{
+        font-size: 2em;
+    }
+    ul{
+        list-style: none;
         margin-bottom: 0;
         li{
             font-size: 1.5em;
@@ -14,7 +19,6 @@
     
     }
 
-    font-family: 'Nunito', sans-serif;
 
     button {
         @extend %boton;
@@ -24,10 +28,9 @@
     }
 
     #nutri-ye{
-        .container{
-            display: flex;
+        .contenedor{
+
             .textonu{
-                width: 50%;
                 text-align: initial;
                 display: flex;
                 flex-direction: column;
@@ -37,28 +40,45 @@
                 color:rgb(173, 243, 68);
             }
             .img-container{
-                background-image: url("../multimedia/img/lay-flat-delicioso-concepto-comida-sana.jpg");
-                background-size: cover;
-                background-position: center center;
-                height: 500px;
-                width: 400px;
-                margin: 20px;
+                img{
+                    width: 100%;
+                    margin: 20px;
+                }
             }
         }
     }
+    
     #nuestros-tips{
         background-color: rgb(211, 248, 156);
         color: rgb(255, 255, 255);
         .container{
-            text-align: center;
             padding: 100px 12px 100px;
             h2{
                 margin-bottom: 90px;
                 padding-bottom: 30px;
+                text-align: center;
                 }
             }
         
         }
+
+    #caracteristicas{
+        .container{
+            ul{
+                text-align: initial;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .img-container{
+                img{
+                    width: 100%;
+                    margin: 20px;
+                }
+            }
+            
+        }
+    }
 }
 
 
@@ -68,76 +88,54 @@
 
 @media (max-width: 767px) {
 
-    #nuestros-tips p{
-        display: none;
-        }
-        .nutritips{
-            h3 {
-                padding-top: 36px;
-            }
-            .tarjetas1{
 
-                background-image: linear-gradient(
-                    0deg,
-                    rgba(0,0,0,0.5),
-                    rgba(0,0,0,0.5),
-                )
-                ,url("../multimedia/img/tarjetas/nutricion-salud.jpg");
-                background-position: center center;
-                background-size: cover;
-                margin: 15px;
-                border-radius: 15px;
-            }
-            .tarjetas2{
 
-                background-image: linear-gradient(
-                    0deg,
-                    rgba(0,0,0,0.5),
-                    rgba(0,0,0,0.5),
-                )
-                ,url("../multimedia/img/tarjetas/nutricion-ayurveda.jpg");
-                background-position: center center;
-                background-size: cover;
-                margin: 15px;
-                border-radius: 15px;
-            }
-            .tarjetas3{
-
-                background-image: linear-gradient(
-                    0deg,
-                    rgba(0,0,0,0.5),
-                    rgba(0,0,0,0.5),
-                )
-                ,url("../multimedia/img/tarjetas/recetario.jpg");
-                background-position: center center;
-                background-size: cover;
-                margin: 15px;
-                border-radius: 15px;
-            }
-        }
     #caracteristicas{
+        display: flex;
+        flex-direction: column;
         .container{
             text-align: center;
-            li{
+            .img-container{
+                margin: 0;
+                padding: 0;
+                img{
+                    display: none;
+                }
+            }
+            
+            ul{
+                padding: 0px;
+                align-items: center;
+                li{
                     margin: 12px 0px 0px;
                     font-weight: bold;
                 }
             }
+            }
         }
+        
     #nutri-ye{
-        .container{
-            .textonu{
-                p{
-                    text-align: center;
-                    padding: 5px;
-                    margin: 5px;
+        display: flex;
+        flex-direction: column;
+        .contenedor{
+            padding: 50px 20px;
+            .img-container{
+                margin: 0;
+                padding: 0;
+                img{
+                    display: none;
                 }
             }
-            
-            padding: 200px 20px;
-            .img-container{
-                border-radius: 40px;
+            .textonu{
+                display: flex;
+
+                h2{
+                    text-align: center;
                 }
+                p{
+                    text-align: center;
+                }
+            }
             }
         }    
     
@@ -145,82 +143,23 @@
     
 
 @media (min-width: 768px) {
-        #nuestros-tips{
-            .container{
-                .nutritips{
-                    display: flex;
-                    justify-content: center;
-                    h3{
-                        padding-bottom: 24px;
-                        margin-bottom: 0px;
-                        font-size: 1.4em;
-                    }
 
-                    .tarjetas1{
-
-                        background-image: linear-gradient(
-                            0deg,
-                            rgba(0,0,0,0.5),
-                            rgba(0,0,0,0.5),
-                        )
-                        ,url("../multimedia/img/tarjetas/nutricion-salud.jpg");
-                        padding: 50px;
-                        background-size: 100% 110px;
-                        background-repeat: no-repeat;
-                        background-position-y: 0;
-                        background-color: rgb(85, 121, 38);
-                        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-                        margin: 15px;
-                        border-radius: 15px;
-                    }
-                    .tarjetas2{
-
-                        background-image: linear-gradient(
-                            0deg,
-                            rgba(0,0,0,0.5),
-                            rgba(0,0,0,0.5),
-                        )
-                        ,url("../multimedia/img/tarjetas/nutricion-ayurveda.jpg");
-                        padding: 50px;
-                        background-size: 100% 110px;
-                        background-repeat: no-repeat;
-                        background-position-y: 0;
-                        background-color: rgb(85, 121, 38);
-                        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-                        margin: 15px;
-                        border-radius: 15px;
-                    }
-                    .tarjetas3{
-
-                        background-image: linear-gradient(
-                            0deg,
-                            rgba(0,0,0,0.5),
-                            rgba(0,0,0,0.5),
-                        )
-                        ,url("../multimedia/img/tarjetas/recetario.jpg");
-                        padding: 50px;
-                        background-size: 100% 110px;
-                        background-repeat: no-repeat;
-                        background-position-y: 0;
-                        background-color: rgb(85, 121, 38);
-                        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-                        margin: 15px;
-                        border-radius: 15px;
-                    }
-                    p{
-                        color: rgb(255, 255, 255);
-                        margin: 20px;
-                        font-size: 15px;
-                    }
+        #nutri-ye{
+            .contenedor{
+                grid-template-columns: 1fr 2fr;
+                grid-area: auto;
+                p{
+                    font-size: 20px;
                 }
+
             }
         }
+        
     #caracteristicas{
-        padding: 250px;
-        background-image: url("../multimedia/img/perseverancia.jpg");
-        background-repeat: no-repeat;
-        background-size: 500px 400px;
-        background-position: calc(90vw - 500px) 120px;
-
+        .container{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-area: auto;
+        }
     }
 }
