@@ -99,6 +99,10 @@
     display: none;
   }
 }
+.contactarse {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
 .mein p {
   font-family: "Nunito", sans-serif;
 }
@@ -419,6 +423,11 @@ article {
   transform: perspective(600px) rotateY(360deg);
 }
 
+@media (max-width: 767px) {
+  .tarjeta p {
+    line-height: 1;
+  }
+}
 /*inicia el mainnnnnnn*/
 .mein {
   background-color: rgb(245, 245, 245);
